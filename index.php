@@ -104,11 +104,12 @@ if(!defined('__PRAGYAN_CMS'))
             <?php echo $WARNINGSTRING;?>
             <?php echo $ERRORSTRING; ?>
 	    <div class="pure-g clusters">
-	    	<div class="pure-u-1 pure-u-md-1-5" ></div>
-	    	<div class="pure-u-1 pure-u-md-1-5" ></div>
-	    	<div class="pure-u-1 pure-u-md-1-5" ></div>
-	    	<div class="pure-u-1 pure-u-md-1-5" ></div>
-	    	<div class="pure-u-1 pure-u-md-1-5" ></div>
+	    <?php echo $CONTENT; ?>
+	    	<div ></div>
+	    	<div ></div>
+	    	<div ></div>
+	    	<div ></div>
+	    	<div ></div>
 	    </div>
         </div>
     </div>
