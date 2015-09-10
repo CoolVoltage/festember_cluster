@@ -71,9 +71,8 @@ return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
 });
 
 var wheel = false,
-    $docH = $('.content').height(),
+    $docH = $('.content')[0].scrollHeight - $('.content').height(),
     $scrollTop = $('.content').scrollTop();
-
 $(".content").bind('scroll', function() {
 		if (wheel === false) {
 		$scrollTop = $(this).scrollTop();
