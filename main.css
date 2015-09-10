@@ -83,8 +83,8 @@ This is the parent `<div>` that contains the menu and the content area.
     padding-top : 2em;
 }
     #layout.active #menu {
-        left: 150px;
-        width: 150px;
+        left: 160px;
+        width: 160px;
     }
 
     #layout.active .menu-link {
@@ -162,8 +162,8 @@ appears on the left side of the page.
 */
 
 #menu {
-    margin-left: -150px; /* "#menu" width */
-    width: 150px;
+    margin-left: -160px; /* "#menu" width */
+    width: 160px;
     margin-top : -2em;
     position: fixed;
     left: 0;
@@ -197,6 +197,10 @@ appears on the left side of the page.
 	margin-bottom : 1em;
 	border : 1px solid #333;
 	    }
+    .pure-menu-item{
+	box-shadow : 5px 5px 9px #0B0B0B;
+	width:150px;	    
+	   }
     /*
     Add that light border to separate items into groups.
     */
@@ -308,21 +312,21 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+        padding-left: 160px; /* left col width "#menu" */
         left: 0;
     }
     #menu {
-        left: 150px;
+        left: 160px;
     }
 
     .menu-link {
         position: fixed;
-        left: 150px;
+        left: 160px;
         display: none;
     }
 
     #layout.active .menu-link {
-        left: 150px;
+        left: 160px;
     }
 }
 
@@ -335,7 +339,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     */
     #layout.active {
         position: relative;
-        left: 150px;
+        left: 160px;
     }
 }
 .content::-webkit-scrollbar-track
