@@ -57,10 +57,40 @@
 		window.location = $(this).find("a").attr("href");
 		return false;
 	});
+	smoothScroll();
 }(this, this.document));
 
 window.onresize = function(){
 	layoutSpecs();
+}
+function smoothScroll(){
+	jQuery.extend(jQuery.easing, {
+easeOutQuint: function(x, t, b, c, d) {
+return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+}
+});
+
+var wheel = false,
+    $docH = $('.content').height(),
+    $scrollTop = $('.content').scrollTop();
+
+$(".content").bind('scroll', function() {
+		if (wheel === false) {
+		$scrollTop = $(this).scrollTop();
+		}
+		});
+$(".content").bind('DOMMouseScroll mousewheel', function(e, delta) {
+		delta = delta || -e.originalEvent.detail / 3 || e.originalEvent.wheelDelta / 120;
+		wheel = true;
+
+		$scrollTop = Math.min($docH, Math.max(0, parseInt($scrollTop - delta * 30)));
+		$('.content').stop().animate({
+scrollTop: $scrollTop + 'px'
+}, 1000, 'easeOutQuint', function() {
+wheel = false;
+});
+		return false;
+		});
 }
 function layoutSpecs(){
 
