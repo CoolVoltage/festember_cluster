@@ -349,7 +349,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 .content::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+	background-color: #000000;
 	border-radius:10px;
 }
 
@@ -357,13 +357,13 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 {
 width: 8px;
 	border-radius:10px;
-       background-color: #F5F5F5;
+	background-color: #000000;
 }
 
 .content::-webkit-scrollbar-thumb
 {
 	border-radius:10px;
-	background-color: #000000;
+	background-color: #F5F5F5;
 }
 @keyframes bounce {
 	from, 20%, 53%, 80%, to {
