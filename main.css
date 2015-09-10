@@ -104,13 +104,30 @@ The content `<div>` is where all your content goes.
     font-size:0.75em;
     overflow : auto; 
 }
-.clusters div {
-	width:200px;
-	height:200px;
+.clusters .clusterPic {
+	width:160px;
+	height:160px;
+	font-size : 1.5em;	
+	padding:25px;
+	letter-spacing:1px;
 	margin:0 auto;
 	background-image : url("borderCluster.png");
 	background-size : contain;
 	background-repeat :no-repeat;
+}
+.clusterPic div{
+	width:160px;
+	text-align:center;
+	height:130px;
+	padding-top:20px;
+	word-wrap:break-word;
+	cursor:pointer;
+}
+.clusterPic a{
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	color:black;
+	font-family:myFirstFont;
+	text-decoration : none;
 }
 .header {
      margin: 0;

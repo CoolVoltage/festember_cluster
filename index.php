@@ -104,12 +104,12 @@ if(!defined('__PRAGYAN_CMS'))
             <?php echo $WARNINGSTRING;?>
             <?php echo $ERRORSTRING; ?>
 	    <div class="pure-g clusters">
-	    <?php echo $CONTENT; ?>
-	    	<div ></div>
-	    	<div ></div>
-	    	<div ></div>
-	    	<div ></div>
-	    	<div ></div>
+	    <?php //echo $CONTENT; ?>
+	    	<div class="clusterPic"><div><a href="">Goose is motherfucking asshole who doesnt do his own work</a></div></div>
+	    	<div class="clusterPic"><div><a href="">Goose is motherfucking asshole who doesnt do his own work</a></div></div>
+	    	<div class="clusterPic"><div><a href="">Goose is motherfucking asshole who doesnt do his own work</a></div></div>
+	    	<div class="clusterPic"><div><a href="">Goose is motherfucking asshole who doesnt do his own work</a></div></div>
+	    	<div class="clusterPic"><div><a href="">Goose is motherfucking asshole who doesnt do his own work</a></div></div>
 	    </div>
         </div>
     </div>

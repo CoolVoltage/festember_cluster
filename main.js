@@ -36,7 +36,6 @@
 	
 	var arr1 = $("a.pure-menu-link");
 	var arr2 = $("div.tabElement > a");
-	$(arr1[0]).addClass("menuLinkActive");
 	if(arr2.length >0){
 		$("div.tabElement").css("display","none");
 		for(var i=0;i<arr1.length;i++){
@@ -54,6 +53,10 @@
 			}
 		}
 	}
+	$(".clusterPic div").click(function(){
+		window.location = $(this).find("a").attr("href");
+		return false;
+	});
 }(this, this.document));
 
 window.onresize = function(){
