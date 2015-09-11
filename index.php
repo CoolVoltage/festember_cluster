@@ -85,6 +85,7 @@ if(!defined('__PRAGYAN_CMS'))
     </a>
 
 	<div id="menu">
+	<img class="pure-menu-list animated slideInLeft" src="<?php echo $TEMPLATEBROWSERPATH; ?>/back.png" id="back" onclick="window.history.back()"/>
         <div class="pure-menu">
 <!--            <a class="pure-menu-heading" href="http://purecss.io/layouts/side-menu/#">Pormaboku</a> -->
 

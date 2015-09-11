@@ -74,6 +74,15 @@ Add transition to containers so they can push in and out.
 	color:white;
 	font-size:1em;
 }
+#back{
+	width:60px;
+	cursor:pointer;
+	display:inline-block;
+	margin-left:30px;
+}
+#back:hover{
+	width:65px;
+}
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */
@@ -205,6 +214,9 @@ appears on the left side of the page.
 	box-shadow : 5px 5px 9px #0B0B0B;
 	width:150px;	    
 	   }
+.pure-menu-item:hover{
+	width:155px;	
+}
     /*
     Add that light border to separate items into groups.
     */
