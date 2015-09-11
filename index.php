@@ -72,6 +72,7 @@ if(!defined('__PRAGYAN_CMS'))
 <body onload="<?php echo $STARTSCRIPTS; ?>">
 
 <div class="header">
+<h1><?php echo $cmstitle;?></h1> 
 </div>
 <img id="topPillar" src="<?php echo $TEMPLATEBROWSERPATH; ?>/topPillar.png">
 <img id="bottomPillar" src="<?php echo $TEMPLATEBROWSERPATH; ?>/bottomPillar.png">
@@ -100,19 +101,18 @@ if(!defined('__PRAGYAN_CMS'))
 
         <div class="content cms-content">
 
-            <h2 class="content-subhead"></h2>
-            <?php echo $INFOSTRING; ?>
-            <?php echo $WARNINGSTRING;?>
-            <?php echo $ERRORSTRING; ?>
+            <?php  echo $INFOSTRING; ?>
+            <?php  echo $WARNINGSTRING;?>
+            <?php  echo $ERRORSTRING; ?>
 	    <div class="pure-g clusters">
-	    <?php //echo $CONTENT; ?>
-	    	<div class="clusterPic"><div><a href="">English Lits</a></div></div>
+	    <?php echo $CONTENT; ?>
+	    	<!--<div class="clusterPic"><div><a href="">English Lits</a></div></div>
 	    	<div class="clusterPic"><div><a href="">Arts</a></div></div>
 	    	<div class="clusterPic"><div><a href="">Tamil Lits</a></div></div>
 	    	<div class="clusterPic"><div><a href="">Fashion Show</a></div></div>
 	    	<div class="clusterPic"><div><a href="">Hindi Lits</a></div></div>
 	    	<div class="clusterPic"><div><a href="">Culturals</a></div></div>
-	    	<div class="clusterPic"><div><a href="">Informals</a></div></div>
+	    	<div class="clusterPic"><div><a href="">Informals</a></div></div>-->
 	    </div>
         </div>
     </div>
